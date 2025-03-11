@@ -19,7 +19,7 @@
 &caps_word { continue-list = <UNDERSCORE MINUS BACKSPACE DELETE>; };
 
 / {
-    chosen { zmk,matrix_transform = &skeletyl_transform; };
+    chosen { zmk,matrix_transform = &default_transform; };
 
     behaviors {
         hm: homerow_mods {
