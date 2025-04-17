@@ -46,21 +46,42 @@
         mahou_convert: new_macro {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp F4>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+
             label = "NEW_MACRO";
         };
 
         mahou_selected: mahou_selected {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_WIN &kp F5>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_WIN>,
+                <&macro_tap>,
+                <&kp F5>,
+                <&macro_release>,
+                <&kp LEFT_WIN>;
+
             label = "MAHOU_SELECTED";
         };
 
         mahou_case: mahou_case {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LS(LEFT_WIN) &kp F4>;
+            bindings =
+                <&macro_press>,
+                <&kp LS(LEFT_WIN)>,
+                <&macro_tap>,
+                <&kp F4>,
+                <&macro_release>,
+                <&kp LS(LEFT_WIN)>;
+
             label = "MAHOU_CASE";
         };
     };
