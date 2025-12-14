@@ -35,7 +35,7 @@
 		row-gpios
 		= <&pro_micro 21 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>// Row 1 - F4
 		, <&pro_micro 18 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>// Row 2 - F7
-		, <&pro_micro 16 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>// Row 3 - C6
+		, <&pro_micro 15 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>// Row 3 - C6 (FIXED)
 		, <&pro_micro 4 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>// Row 4 - D4
 		;
 	};
